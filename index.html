@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أستاذ أحمد محمد - مدرس فيزياء</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                
+                <div class="imge">O</div>
+                فيزياء | الاستاذ حيدر
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">الرئيسية</a>
+                <a href="#quick-access" class="nav-link">الدروس السريعة</a>
+                <a href="#stages" class="nav-link">المراحل</a>
+                <a href="#about" class="nav-link">عن المدرس</a>
+                <a href="#contact" class="nav-link">تواصل</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                 <div class="imge">O</div>
+                فيزياء | الاستاذ حيدر
+            </div>
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#home" class="mobile-menu-link">الرئيسية</a>
+            <a href="#quick-access" class="mobile-menu-link">الدروس السريعة</a>
+            <a href="#stages" class="mobile-menu-link">المراحل</a>
+            <a href="#about" class="mobile-menu-link">عن المدرس</a>
+            <a href="#contact" class="mobile-menu-link">تواصل</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i>
+                <span>منصة تعليمية متكاملة</span>
+            </div>
+            <h1 class="hero-title">
+                دروس الفيزياء
+                <span class="gradient-text"> بأسلوب عصري</span>
+            </h1>
+            <p class="hero-subtitle">
+                دروس مرتبة حسب المرحلة والفصل، وصول سريع وسهل لجميع الطلاب
+            </p>
+            <div class="hero-buttons">
+                <a href="#quick-access" class="btn btn-primary">
+                    <i class="fas fa-bolt"></i>
+                    <span>الوصول السريع للدروس</span>
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#stages" class="btn btn-secondary">
+                    <i class="fas fa-book-open"></i>
+                    <span>تصفح المراحل</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access-section" id="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h2 class="section-title">الوصول السريع للدروس</h2>
+                <p class="section-subtitle">ابحث عن درسك بسرعة من خلال الفلترة الذكية</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="filter-card">
+                    <div class="filter-group">
+                        <label for="filterStage">
+                            <i class="fas fa-graduation-cap"></i>
+                            اختر المرحلة الدراسية
+                        </label>
+                        <select id="filterStage" class="filter-select">
+                            <option value="">-- اختر المرحلة --</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filterSemester">
+                            <i class="fas fa-calendar-alt"></i>
+                            اختر الفصل الدراسي
+                        </label>
+                        <select id="filterSemester" class="filter-select" disabled>
+                            <option value="">-- اختر الفصل --</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filterLesson">
+                            <i class="fas fa-book"></i>
+                            اختر موضوع الدرس
+                        </label>
+                        <select id="filterLesson" class="filter-select" disabled>
+                            <option value="">-- اختر الدرس --</option>
+                        </select>
+                    </div>
+
+                    <button id="goToLesson" class="btn btn-primary btn-large" disabled>
+                        <i class="fas fa-play-circle"></i>
+                        <span>الذهاب إلى المحاضرة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card shine-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>دروس فيديو</h3>
+                    <p>محاضرات مصورة بجودة عالية على اليوتيوب</p>
+                </div>
+                <div class="feature-card shine-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>ملازم شاملة</h3>
+                    <p>ملازم مرتبة لكل فصل ومرحلة دراسية</p>
+                </div>
+                <div class="feature-card shine-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>امتحانات ونماذج</h3>
+                    <p>أسئلة وحلول وامتحانات سابقة</p>
+                </div>
+                <div class="feature-card shine-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>وصول سريع</h3>
+                    <p>رابط واحد لكل احتياجاتك الدراسية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section class="stages-section" id="stages">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h2 class="section-title">المراحل الدراسية المتاحة</h2>
+                <p class="section-subtitle">اختر المرحلة الدراسية للوصول إلى الفصول والدروس</p>
+            </div>
+            <div class="stages-grid" id="stagesGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 class="section-title">تعرف على مدرسك</h2>
+                <p class="section-subtitle">معلم متخصص بخبرة واسعة في تدريس الفيزياء</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main-card shine-effect">
+                    <div class="teacher-profile">
+                        <div class="teacher-image-wrapper">
+                            <div class="teacher-avatar">
+                                <!-- <i class="fas fa-user-graduate"></i> -->
+                                <div class="about-profile"></div>
+                            </div>
+                            <div class="avatar-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        <div class="teacher-info">
+                            <h2>أستاذ حيدر مجيد</h2>
+                            <p class="teacher-title">مدرس فيزياء - متخصص في المرحلة المتوسطة والإعدادية</p>
+                            <div class="teacher-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>10+ سنوات خبرة</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>500+ طالب</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>تقييم ممتاز</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-bio">
+                        <h3><i class="fas fa-quote-right"></i> نبذة عني</h3>
+                        <p>
+                            أستاذ فيزياء متخصص مع أكثر من 10 سنوات من الخبرة في تدريس الفيزياء للمراحل المتوسطة والإعدادية. 
+                            أؤمن بأن الفيزياء ليست مجرد معادلات ونظريات، بل هي فهم عميق للطبيعة من حولنا. 
+                            هدفي هو تبسيط المفاهيم المعقدة وجعل الفيزياء ممتعة وسهلة الفهم لكل طالب.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-details-grid">
+                    <div class="about-card shine-effect">
+                        <div class="about-card-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>أسلوب التدريس</h3>
+                        <p>
+                            أعتمد على الشرح التفصيلي المبسط مع استخدام الأمثلة العملية والتطبيقات الواقعية. 
+                            أستخدم الوسائل التعليمية الحديثة والمحاكاة البصرية لتسهيل الفهم وترسيخ المعلومات.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card shine-effect">
+                        <div class="about-card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>سنوات الخبرة</h3>
+                        <p>
+                            أكثر من 10 سنوات في تدريس الفيزياء للمراحل المتوسطة والإعدادية. 
+                            خلال هذه الفترة، ساعدت مئات الطلاب على تحقيق التفوق والنجاح في مادة الفيزياء.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card shine-effect">
+                        <div class="about-card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>رسالة للطلاب</h3>
+                        <p>
+                            النجاح في الفيزياء يبدأ بالإيمان بقدراتك. لا تستسلم أمام التحديات، فكل مفهوم صعب اليوم 
+                            سيصبح سهلاً غداً مع الممارسة والمثابرة. أنا هنا لدعمكم في كل خطوة نحو التفوق.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="motivational-quote shine-effect">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="quote-text">
+                        "الفيزياء ليست صعبة، هي فقط تحتاج إلى الفهم الصحيح والممارسة المستمرة. 
+                        معاً سنجعل رحلتك التعليمية ممتعة ومثمرة!"
+                    </p>
+                    <p class="quote-author">- أستاذ حيدر مجيد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="section-subtitle">نسعد بالإجابة على استفساراتك في أي وقت</p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="https://wa.me/9647XXXXXXXXX" target="_blank" class="contact-card whatsapp shine-effect">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>واتساب</h3>
+                    <p>تواصل مباشر وسريع</p>
+                    <span class="contact-badge">الأسرع</span>
+                </a>
+                
+                <a href="https://youtube.com/@username" target="_blank" class="contact-card youtube shine-effect">
+                    <i class="fab fa-youtube"></i>
+                    <h3>يوتيوب</h3>
+                    <p>قناة الدروس والشروحات</p>
+                    <span class="contact-badge">اشترك الآن</span>
+                </a>
+                
+                <a href="https://instagram.com/username" target="_blank" class="contact-card instagram shine-effect">
+                    <i class="fab fa-instagram"></i>
+                    <h3>انستجرام</h3>
+                    <p>تابعنا على انستجرام</p>
+                    <span class="contact-badge">تابعنا</span>
+                </a>
+                
+                <a href="tel:+9647XXXXXXXXX" class="contact-card phone shine-effect">
+                    <i class="fas fa-phone"></i>
+                    <h3>اتصال هاتفي</h3>
+                    <p>للاستفسارات العاجلة</p>
+                    <span class="contact-badge">متاح دائماً</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>⚛️ فيزياء</h3>
+                    <p>منصة تعليمية متكاملة لتدريس الفيزياء بأسلوب عصري ومبسط لجميع المراحل الدراسية</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/9647XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@username" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/username" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/username" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>المراحل الدراسية</h4>
+                    <ul>
+                        <li><a href="#stages">الثالث المتوسط</a></li>
+                        <li><a href="#stages">الرابع العلمي</a></li>
+                        <li><a href="#stages">الخامس العلمي</a></li>
+                        <li><a href="#stages">السادس العلمي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>المواد المتاحة</h4>
+                    <ul>
+                        <li><a href="#stages">دروس فيديو</a></li>
+                        <li><a href="#stages">ملازم دراسية</a></li>
+                        <li><a href="#stages">امتحانات ونماذج</a></li>
+                        <li><a href="#quick-access">مراجعات سريعة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>روابط مهمة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#quick-access">الدروس السريعة</a></li>
+                        <li><a href="#stages">المراحل الدراسية</a></li>
+                        <li><a href="#about">عن المدرس</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 جميع الحقوق محفوظة - أستاذ أحمد محمد</p>
+                <p>تم التصميم والتطوير بـ <i class="fas fa-heart"></i> لخدمة الطلاب</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/9647XXXXXXXXX" target="_blank" class="whatsapp-float shine-effect">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal for Stage Details -->
+    <div class="modal" id="stageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 id="modalTitle"></h2>
+            <p class="modal-subtitle">اختر الفصل الدراسي لعرض المحتوى</p>
+            <div class="semesters-grid" id="semestersGrid"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Semester Details -->
+    <div class="modal" id="semesterModal">
+        <div class="modal-content">
+            <button class="modal-close" id="semesterModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 id="semesterModalTitle"></h2>
+            <p class="modal-subtitle" id="semesterModalSubtitle"></p>
+            <div class="content-cards" id="contentCards"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
